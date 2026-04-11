@@ -273,11 +273,6 @@ else:
         print("the largest number is:",c)
 largest(10,20,15)'''
 
-x='harry'
-def func():
-    x='rohan'
-    print(x)
-func()
-print(x)
+
 
 
