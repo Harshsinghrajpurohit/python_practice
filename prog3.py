@@ -282,3 +282,87 @@ print()
 s2=s1.copy()
 print("s2=",s2)
 print("id of s2=",id(s2))'''
+
+#171 Write a python program to reverse a list.
+
+'''l=list(map(int,input("Enter the elements").split()))
+print("the original list is=",l)
+print()
+l.reverse()
+print("the reverse list is =",l)'''
+
+#172  Write a python program to reverse a tuple.
+'''t=tuple(map(int,input("Enter the elements").split()))
+print("the original tuple is=",t)
+print()
+rev=tuple(reversed(t))
+print("the reverse tuple is =",rev)'''
+
+#173 Write a python program to reverse a dictionary.
+'''d={}
+n=int(input("enter the elements:"))
+for i in range(n):
+    key=input("enter key:")
+    value=input("enter value:")
+    d[key]=value
+print(d)
+
+rev = dict(reversed(list(d.items())))
+print(rev)'''
+
+#174 Write a python program to reverse a dictionary.
+'''s = set(map(int, input("Enter elements: ").split()))
+print(s)
+
+print()
+l = list(s)
+l.reverse()
+
+rev = set(l)
+print(rev)'''
+
+#175 Write a Python program to words in sentence
+'''s=input("Enter the sentence:")
+words=s.split()
+rev=words[::-1]
+result=" ".join(rev)
+print(result)'''
+
+#176 Write a python program to characters in each word of sentence.
+'''s=input("Enter the sentence:")
+print(s)
+
+s=s[::-1]
+print(s)'''
+
+#177 Write a python program to reverse digits of a number.
+'''n=int(input("enter the numbers:" ))
+rev=0
+while n>0:
+    digit=n%10
+    rev=rev*10+digit
+    n=n//10
+print("reversed number is:",rev)'''
+
+#179 Write a program to reverse the elements of nested list
+'''l = [[1, 2], [3, 4], [5, 6]]
+
+print("Original:", l)
+
+l = [sub[::-1] for sub in l[::-1]]
+
+print("Reversed:", l)'''
+
+#180. Write a python to reverse the elements in of a nested dictionary.
+'''d = {
+    'a': {'x': 1, 'y': 2},
+    'b': {'z': 3}
+}
+
+rev = {}
+
+for outer_k, inner_d in d.items():
+    for inner_k, value in inner_d.items():
+        rev[value] = outer_k
+
+print(rev)'''
