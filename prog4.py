@@ -159,3 +159,117 @@ print("Random floating point number:", random_float())'''
 #160 Write a python progrma to generate random numbers within a specific range.
 '''import random
 print("Random number between 1 and 100:", random.randint(1, 101))'''
+
+
+
+#181 Write a python program to check if a number is prime using function.
+'''def is_prime(num):
+    if num<=1:
+        return False
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True
+num=int(input("Enter the number:"))
+if is_prime(num):
+    print("The number is prime")
+else:
+    print("The number is not prime")'''
+
+#182 Write a python program to check if a string is palindrome using function.
+'''def is_palindrome(s):
+    return s[::-1]==s
+s=input("Enter the string:")
+if is_palindrome(s):
+    print("The string is palindrome")
+else:
+    print("The String is not palindrome")'''
+
+
+#183 Write a python program to check if a number is Armstrong  using function.
+'''def is_armstrong(num):
+    digits=len(str(num))
+    sum=0
+    for i in str(num):
+        sum+=int(i)**digits
+    return sum==num
+num=int(input("Enter the number:"))
+if is_armstrong(num):
+    print("The number is armstrong")    
+else:    
+    print("The number is not armstrong")'''
+
+#184 Write a python program to check if a number is perfect using function.
+'''def is_perfect(n):
+    sum=0
+    for i in range(1,n):
+        if n%i==0:
+            sum=sum+i
+    return sum==n
+n=int(input("Enter the number:"))
+if is_perfect(n):
+    print("The number is perfect")
+else:
+    print("The number is not perfect")'''
+
+#185 Write a python program to check if a number is palindrome using function.
+'''def is_palindrome(num):
+    rev=0
+    temp=num
+    while num>0:
+        digit=num%10
+        rev=rev*10+digit
+        num=num//10
+    return temp==rev
+num=int(input("Enter the number:"))
+if is_palindrome(num):
+    print("The number is palindrome")   
+else:
+    print("The number is not palindrome")'''
+
+#186 Write a python program to check if a string is anagram using function.
+'''def is_anagram(s1,s2):
+    return sorted(s1)==sorted(s2)
+s1=input("Enter the first string:")
+s2=input("Enter the second string:")
+if is_anagram(s1,s2):
+    print("The string is anagram")
+else:
+    print("The string is not anagram")'''
+
+#187 Write a python program to check if a string is pangram using function.
+'''def is_pangram(s):
+    alphabet=set('abcdefghijklmnopqrstuvwxyz')
+    return alphabet.issubset(set(s.lower()))
+s=input("Enter the string:")
+if is_pangram(s):
+    print("The string is pangram")
+else:
+    print("The string is not pangram")'''
+
+#188 Write  a python program to check idf a string contains only digits using function.
+'''def is_digit(s):
+    return s.isdigit()
+s=input("Enter the string:")
+if is_digit(s):
+    print("The string contains only digits")
+else:
+    print("The string does not contain only digits")'''
+
+#189 Write  a python program to check idf a string contains only alphabets using function.
+'''def is_alpha(s):
+    return s.isalpha()
+s=input("Enter the string:")
+if is_alpha(s):
+    print("The string contains only alphabets")
+else:
+    print("The string does not contain only alphabets")'''
+
+#190 Write  a python program to check idf a string contains only alphanumerics using function.
+'''def is_alphanumeric(s):
+    return s.isalnum()
+s=input("Enter the string:")
+if is_alphanumeric(s):
+    print("The string contains only alphanumerics")
+else:
+    print("The string does not contain only alphanumerics")'''
