@@ -273,3 +273,84 @@ if is_alphanumeric(s):
     print("The string contains only alphanumerics")
 else:
     print("The string does not contain only alphanumerics")'''
+
+
+#111  Write a python program to check if a year is a leap year
+'''def is_leap(year):
+    if (year%4==0 and year%100!=0) or (year%400==0):
+        print(year,"is a leap year")
+    else:
+        print(year,"is not a leap year")
+year=int(input("Enter the year:"))
+is_leap(year)'''
+
+#112 write a python program to calculate simple interest.
+'''def simple_interest(p,r,t):
+    return (p*r*t)/100
+p=float(input("Enter the principal amount:"))
+r=float(input("Enter the rate of interest:"))
+t=float(input("Enter the time in years:"))
+si=simple_interest(p,r,t)
+print("The simple interest is:",si)'''
+
+#113 write a python program to calculate compound interest.
+'''def compound_interest(p,r,t):
+    return p*(1+r/100)**t
+p=float(input("Enter the principal amount:"))
+r=float(input("Enter the rate of interest:"))
+t=float(input("Enter the time in years:"))
+ci=compound_interest(p,r,t)
+print("The compound interest is:",ci)'''
+
+#114 Write a python program to convert Celcius to fahrenhit.
+'''def cel_to_fah(c):
+    return (c*9/5+32)
+c=float(input("Enter the temperature in Celcius:"))
+f=cel_to_fah(c)
+print("The temperature in fahrenhit is:",f)'''
+
+#115 Write a python program to convert Celcius fahrenhit to Celcius.
+'''def fah_to_cel(f):
+    return(f-32)*5/9
+f=float(input("Enter the temperature in Fahrenhit:"))
+c=fah_to_cel(f)
+print("The temperature in Celcius is:",c)'''
+
+#116 Write a python progrma to calculater the area of a circle.
+'''import math
+def area_of_circle(r):
+    return math.pi*r**2
+r=float(input("Enter the radius of the circle:"))
+area=area_of_circle(r)
+print("The area of thr circle is:",area)'''
+
+#117 Write a python program to calculate the area of a rectangle.
+'''def area_of_rectangle(l,w):
+    return l*w
+l=float(input("Enter the length of the rectangle:"))
+w=float(input("Enter the width of the rectangle:"))
+area=area_of_rectangle(l,w)
+print("The area of thr rectangle is:",area)'''
+
+#118 Write a python program to calculate the area of a triangle.
+'''def area_of_triangle(b,h):
+    return 0.5*b*h
+b=float(input("Enter the base of the triangle:"))
+h=float(input("Enter the height of the triangle:"))
+area=area_of_triangle(b,h)
+print("The area of thr triangle is:",area)'''
+
+#119 Write a python program to calculate perimeter of a square.
+'''def perimeter_of_square(s):
+    return(4*s)
+a=float(input("Enter the side of the square:"))
+perimeter=perimeter_of_square(a)
+print("The perimeter of the square is:",perimeter)'''
+
+#120 Write a python program to calculate perimeter of a rectangle.
+'''def perimeter_of_rec(l,w):
+    return 2*(l+w)
+l=float(input("Enter the length of the rectangle:"))
+w=float(input("Enter the width of the rectangle:"))
+perimeter=perimeter_of_rec(l,w)
+print("The perimeter of the square is:",perimeter)'''
