@@ -354,3 +354,5 @@ l=float(input("Enter the length of the rectangle:"))
 w=float(input("Enter the width of the rectangle:"))
 perimeter=perimeter_of_rec(l,w)
 print("The perimeter of the square is:",perimeter)'''
+
+
