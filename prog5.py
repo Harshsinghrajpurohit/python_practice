@@ -176,4 +176,95 @@ print("The length of the string is:",length(string))'''
         print(n,end=' ')
 n=int(input("Enter the number:"))
 print_number(n)'''
+
+
+# 41 Write a python program to read a text file.
+
+'''file=open("file1.txt","r")
+content=file.read()
+print(content)
+file.close()'''
+
+#42 Write a python program to write to a text fiel.
+'''f=open("file1.txt","w")
+content=f.write("Hello, I will get a DS job by november")
+print("Content updated successfully")
+f.close()'''
+
+#43 Write a python program to count words in a fiel.
+'''file=open("file1.txt","r")
+content=file.read()
+words=len(content.split())
+print("The number of words in the file is:",words)
+file.close()'''
+
+#44 Write a python program to count lines in a file.
+'''file=open("file1.txt","r")
+lines=file.readlines()
+print("the number of lines int the file is:",len(lines))
+file.close()'''
+
+#45 Write a python program to copy contnents of one file to anoter.
+'''f1=open("file1.txt","r")
+f2=open("file2.txt","w")
+content=f1.read()
+f2.write(content)
+print("Content copied successfully")
+f1.close()'''
+
+#46 Write a python program to check if a file exists.
+'''import os
+file1="file1.txt"
+if os.path.isfile(file1):
+    print("the file exists")
+else:
+    print("the file does not exists")'''
+
+#47 Write a python program to append text to a fiel.
+'''f=open("file1.txt","a")
+content=f.write("\t Currently i am learning python")
+print("Content appended successfully")
+f.close()'''
+
+#48 Write a python programm to find the longest word in a fiel.
+'''f=open("file1.txt","r")
+content=f.read()
+words=content.split()
+longest_word=max(words,key=len)
+print(longest_word)'''
+
+#49 Write a python program to remove blank lines frome a file.
+'''import os
+input_file="file1.txt"
+output_file="file2.txt"
+with open(input_file,"r") as infile ,open(output_file,"w") as outfile:
+    for line in infile:
+        if line.strip():
+            outfile.write(line)
+print("Blank lines removed successfully")'''
+
+#50 Write a python program to read a csv file.
+'''import csv
+f=open("file1.csv","r")
+reader=csv.reader(f)
+for row in reader:
+    print(row)
+f.close()'''
+        #or to wite a csv file.
+
+'''import csv 
+with open("file1.csv","w",newline='') as f:
+    writer=csv.writer(f)
+    writer.writerow(["Hi, Myself, Harsh Singh."])
+    writer.writerow(["I, am an ,aspiring Data Scientist. "])
+    writer.writerow(["I will beccome, a Data Scientist, by october 31."])'''
+
+
+
+
+
+
+    
+
+
  

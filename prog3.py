@@ -344,6 +344,14 @@ while n>0:
     n=n//10
 print("reversed number is:",rev)'''
 
+#write a python program to reverse order of lines in file.
+'''f=open("file1.txt","r")
+lines=f.readlines()
+rev=lines[::-1]
+print("reversed lines are:")
+for line in rev:
+    print(line,end='')'''
+
 #179 Write a program to reverse the elements of nested list
 '''l = [[1, 2], [3, 4], [5, 6]]
 
