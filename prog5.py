@@ -261,7 +261,94 @@ with open("file1.csv","w",newline='') as f:
 
 
 
+#101 Write a python program to iterate over a list using for loop.
+'''num=[10,20,30,40,50,60]
+print(num)
+for i in num:
+    print(i,end=' ')'''
 
+#102 Write a python program to iterate over a list using While loop.
+
+'''num=["apple",100,"True",345,32.56,89.4]
+i=0
+while i<len(num):
+    print(num[i],end=" ")
+    i+=1'''
+
+#103 Write a python program to find the sum of elements in a tuple.
+'''t = tuple(int(x) for x in input("Enter elements: ").split())
+
+total = 0
+for i in t:
+    total += i
+
+print("Sum =", total)'''
+
+#104 Write a python program to check if an element exists in a tuple.
+
+'''t = (34, 56, 78, "harry", "no")
+
+n = input("Enter element: ")
+
+try:
+    n = int(n)
+except:
+    pass
+if n not in t:
+    print("element is not present in tuple")
+else:
+    print("element is present in tuple")'''
+
+#105 Write a python program to convert a string into list of characters.
+
+'''s=input("Enter the string:")
+print(s)
+words=s.split()
+lst=list(words)
+
+print(lst)'''
+
+#106 Write a python program to join a list of strings into a single string.
+
+'''lst=['Hi', 'Hello', 'I', 'am', 'Harsh', 'Rajpurohit', 'I', 'am', 'a', 'Data', 'Scientist']
+print(lst)
+res=' '.join(lst)
+s=str(res)
+print(s)'''
+
+#107 Write a Python program to find the largest word in a sentence.
+'''s=input("Enter the string:")
+words=s.split()
+longest_word=max(words,key=len)
+print(longest_word)'''
+
+#108  Write a Python program to find the largest word in a sentence.
+'''s=input("Enter the string:")
+words=s.split()
+smallest_word=min(words,key=len)
+print(smallest_word)'''
+
+#109 Write a python program to count the number of words in a sentence.
+'''s = input("Enter the string: ")
+
+words = s.split()
+count = len(words)
+
+print("Number of words:", count)'''
+
+
+#110 Write a python program to check if a number is positive,negative or zero.
+'''n=int(input("Enter the number:"))
+if n==0:
+ print("The number is zero")
+elif n>0:
+    print("The number is positive")
+else:
+    print("The number is negative")'''
+
+
+
+          
 
 
     
