@@ -138,3 +138,172 @@ for v in vowels:
         break'''
 
 
+#311 Write a python program to implement object-oriented programming with a class and object.
+
+'''class Employee:
+    def __init__(self,id,name,salary):
+        self.id=id
+        self.name=name
+        self.salary=salary
+    def display(self):
+        print("ID:", self.id)
+        print("Name:", self.name)
+        print("Salary:", self.salary)
+e=Employee(101,'Harsh',100000)
+e.display()'''
+
+#312 Write a python progrma to implement inheritance.
+
+'''class Parent:
+    def __init__(self):
+        print("Parent class executed")
+class Child(Parent):
+    pass
+c=Child()'''
+
+#313 Write a python program to implement multiple inheritance.
+'''class Personal:
+    def show1(self,name,age):
+        self.name=name
+        self.age=age
+class College:
+    def show2(self,usn,branch):
+        self.usn=usn
+        self.branch=branch
+class Details(Personal,College):
+      def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("USN:", self.usn)
+        print("Branch:", self.branch)
+name=input("Enter the student name:")
+age=int(input("Enter the age :"))
+usn=int(input("Enter the usn :"))
+branch =input("Enter the branch name:")
+
+d=Details()
+d.show1(name,age)
+d.show2(usn,branch)
+print(d.display())'''
+
+#314 Write a python program to implement multilevel inheritance.
+'''class Employee:
+    def show1(self):
+        print("I am an Employee at Google")
+class Engineer(Employee):
+    def show2(self):
+        print("I am an Engineer at google")
+class Software(Engineer):
+   pass
+s=Software()
+s.show1()
+s.show2()'''
+
+#315 Write a python program to implement hierarchical inheritance.
+'''class Parent:
+    def show(self):
+        print("Parent class Executed")
+
+class Child1(Parent):
+    def child1_method(self):
+        print("Child1 specific method")
+
+class Child2(Parent):
+    def child2_method(self):
+        print("Child2 specific method")
+
+c1 = Child1()
+c2 = Child2()
+
+c1.show()
+c1.child1_method()
+
+c2.show()
+c2.child2_method()'''
+
+#316 Write a python program to implement hybrid inheritance.
+'''class A:
+    def method1(self):
+        print("class A executed")
+class B(A):
+    def method2(self):
+        print("class B executed")
+class C(A):
+    def method3(Self):
+        print("class c executed")
+class D(B,C):
+    def method4(self):
+        print("Class D executed")
+
+d=D()
+d.method1()
+d.method2()
+d.method3()
+d.method4()'''
+
+#317 Write a python program to implement polymorphism.
+'''class Animal:
+    def sound(self):
+        print("Animal makes sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
+
+a = Animal()
+d = Dog()
+c = Cat()
+
+a.sound()
+d.sound()
+c.sound()'''
+
+#318 Write a python program to implement method overloading.
+'''class Test:
+    def add(self, a, b, c ):
+        return a + b + c
+
+t = Test()
+print(t.add(2, 3,5))       
+print(t.add(2, 3, 4))'''
+
+# 319 Write a python program to implement method overriding.
+'''class Employee:
+    def salary(self):
+        print("Basic salary")
+
+class Manager(Employee):
+    def salary(self):
+        print("Salary with bonus")
+
+class Intern(Employee):
+    def salary(self):
+        print("Stipend")
+
+e = Employee()
+m = Manager()
+i = Intern()
+
+e.salary()
+m.salary()
+i.salary()'''
+
+#320 Write a python progrma to implement operator overriding.
+'''class Employee:
+    def __init__(self,id):
+        
+        self.id=id
+    def __eq__(self, other):
+        return self.id==other.id
+e1=Employee(101)
+e2=Employee(101)
+print(e1==e2)'''
+
+
+
+
+
