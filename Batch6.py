@@ -304,6 +304,185 @@ e2=Employee(101)
 print(e1==e2)'''
 
 
+#321 Write a python program to implement Encapsulation.
+'''class Demo:
+    def setAge(self,age):
+        self.__age=age
+    def getAge(self):
+        return self.__age
 
+
+d=Demo()
+age=int(input("enter the age:"))
+d.setAge(age)
+print(d.getAge())'''
+
+#322 Write a python program to implement abstraction.
+'''from abc import *
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        print("Area of circle")
+
+class Rectangle(Shape):
+    def area(self):
+        print("Area of rectangle")
+
+c = Circle()
+r = Rectangle()
+
+c.area()
+r.area()'''
+
+#323 Write a python program to implement constructor in class.
+
+'''class Demo:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def show(self):
+        print("Name="'{}'.format(self.name))
+        print("Age="'{}'.format(self.age))
+d=Demo("Harsh",21)
+d.show()'''
+
+# 324 Write a python program to implement destructor in class.
+'''class Test:
+    def __init__(self):
+        print("Constructor is being created....")
+
+    def __del__(self):
+        print("Deconstructor is being executed")
+t=Test()
+del t'''
+
+#325 Write a python program to implement class variables and instance variables.
+'''class Employee:
+    company = "TCS"   
+
+    def __init__(self, eid, ename, salary):
+        self.eid = eid          
+        self.ename = ename      
+        self.salary = salary    
+
+e1 = Employee(101, "Harsh", 60000)
+e2 = Employee(102, "Aman", 50000)
+
+
+print(e1.eid, e1.ename, e1.salary)
+print(e2.eid, e2.ename, e2.salary)
+
+# class variable
+print(e1.company)
+print(e2.company)'''
+
+#326 Write a python program to implement static method.
+'''class Test:
+    @staticmethod
+    def add(a,b):
+        print(a+b)
+t=Test()
+Test.add(34,45)'''
+
+#327 Write a python program to implement class  method.
+'''class Employee:
+    company="Google"
+    def __init__(self,id,name,salary):
+        self.id=id
+        self.name=name
+        self.salary=salary
+    
+    @classmethod
+    def change_company(cls,new_company):
+        cls.company=new_company
+
+e1 = Employee(101,"Harsh", 60000)
+e2 = Employee(102,"Aman", 50000)
+
+print("Before:", e1.company, e2.company)
+
+Employee.change_company("Meta")
+
+print("After:", e1.company, e2.company)'''
+
+#328 Write a python program to implement abstract base class.
+'''from abc import *
+class College(ABC):
+    @abstractmethod
+    def marks(self):
+        pass
+class Student(College):
+    def marks(self):
+        print("Marks of student is being evaluating...")
+s=Student()
+s.marks()'''
+
+
+#329 Write a python program to implement interface using abstract  class.
+'''from abc import *
+class Vehicle(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+    @abstractmethod
+    def stop(self):
+        pass
+
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with key")
+
+    def stop(self):
+        print("Car stops with brake")
+
+class Bike(Vehicle):
+    def start(self):
+        print("Bike starts with kick")
+
+    def stop(self):
+        print("Bike stops with brake")
+
+
+c = Car()
+b = Bike()
+
+c.start()
+c.stop()
+
+b.start()
+b.stop()'''
+
+#330 Write a python program to implement multiple constructors using @classmethod.
+'''class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    @classmethod
+    def from_name(cls, name):
+        return cls(name, 0)
+
+    def display(self):
+        print("Name:", self.name)
+        print("Balance:", self.balance)
+
+
+# normal constructor
+a1 = BankAccount("Harsh", 5000)
+
+# alternative constructor
+a2 = BankAccount.from_name("Aman")
+
+a1.display()
+a2.display()'''
 
 
