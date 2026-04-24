@@ -69,3 +69,44 @@ while True:
     choice=input("Do you want to play again? (yes/no):")
     if choice.lower()!="yes":
         break'''
+
+#201 Write a python program to check if a number is prime using recursion.
+'''def is_prime(n,i=2):
+    if n<=1:
+        return False
+    if i==n:
+        return True
+    if n%i==0:
+     return False
+    return is_prime(n, i +1)
+n=int(input("Enter the number:"))
+if is_prime(n):
+   print("the number is prime")
+else:
+   print("the number is not prime")'''
+
+#202  Write a python program to check if a string is palindrome using recursion.
+'''def is_palindrome(s):
+    if len(s)<=1:
+        return True
+    else:
+        return s[0]==s[-1] and is_palindrome(s[1:-1])
+string=input("Enter the string:")
+print("The string is palindrome:",is_palindrome(string))'''
+
+#203 Write a python program to check if a number is armstromg.
+'''def is_armstrong(n, original, digits):
+    if n == 0:
+        return 0
+    digit = n % 10
+    return (digit ** digits) + is_armstrong(n // 10, original, digits)
+
+num = int(input("Enter the number: "))
+digits = len(str(num))
+
+result = is_armstrong(num, num, digits)
+
+if result == num:
+    print("The number is Armstrong")
+else:
+    print("The number is not an Armstrong number")'''

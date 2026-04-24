@@ -150,7 +150,7 @@ b = int(input("Enter second number: "))
 
 print("LCM is:", lcm(a, b))'''
 
-#78 Write a python program to calculate the sum of digits using recursuin.
+#78 Write a python program to calculate the sum of digits using recursion.
 '''def sum(n):
     if n==0:
       return 0
