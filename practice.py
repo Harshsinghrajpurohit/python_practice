@@ -60,7 +60,7 @@ parsed_data=json.loads(json_str)
 print(parsed_data)
 print(type(parsed_data))'''
 
-from abc import ABC, abstractmethod
+'''from abc import ABC, abstractmethod
 
 class Notification(ABC):
     @abstractmethod
@@ -81,5 +81,5 @@ print(e.send("Your order is confirmed!"))
 s=SMS()
 print(s.send("OTP: 4521"))
 
-'''Email().send("Your order is confirmed!")
+Email().send("Your order is confirmed!")
 SMS().send("OTP: 4521")'''
