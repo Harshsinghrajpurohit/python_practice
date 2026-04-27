@@ -110,3 +110,6 @@ if result == num:
     print("The number is Armstrong")
 else:
     print("The number is not an Armstrong number")'''
+
+
+                                                         

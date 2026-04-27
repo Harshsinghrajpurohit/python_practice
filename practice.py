@@ -189,7 +189,141 @@ JSONFileHandler().write()
 CSVFileHandler().read()
 
 CSVFileHandler().write()'''
+'''l=[int(x) for x in input("enter the elements:").split()]
+print(l)
+print(type(l))'''
 
+'''list=[x*x for x in range(1,21) if x%3==0 or x%4==0]
+print(list)'''
+
+'''l=[int(x) for x in input("enter the elements:").split()]
+print(l)
+print(type(l))   
+t=tuple(l)
     
-    
-   
+print(type(t))'''
+
+'''d={100:"apple",101:'mango',102:'orange'}
+print(d)
+
+print(d.setdefault(200))
+print(d)
+print(d.setdefault(300))
+print(d)
+print(d.setdefault(301,'banana'))
+print(d)'''
+
+#Mini application---
+'''n=int(input("Enter the number of students:"))
+d={}
+for x in range(n):
+    name=input("Enter the name of student:")
+    marks=int(input("Enter the marks of student:"))
+    d[name]=marks
+print("All student data is inserted successfully")
+print(" Student Details")
+print("-------------------")
+for key,value in d.items():
+    print(key,'------>',value)
+
+while True:
+    name=input("Enter the name of student to get the marks:")
+    if name in d:
+        print("Marks of {} ={}".format(name,d[name]))
+    else:
+        print("Student details not found")
+    choice=input("Do you want to continue? (Yes/No):")
+    while choice.lower() not in ['yes','no']:
+        choice=input("Invalid choice ... Pleaase try again with valid options (Yes/No):")
+    if choice.lower() =='no':
+      break
+print("Thanks for using our application... Visit Again")'''
+
+'''class Restaurant:
+    def prepare_order(self):
+        print("Preparing generic order")
+
+class PizzaPlace(Restaurant):
+    def prepare_order(self):
+        print("Baking a fresh Pizza 🍕")
+
+class BiryaniHouse(Restaurant):
+    def prepare_order(self):
+        print("Cooking Biryani 🍛")
+
+class SushiBar(Restaurant):
+    def prepare_order(self):
+        print("Rolling Sushi 🍣")
+
+orders = [PizzaPlace(), BiryaniHouse(), SushiBar()]
+for r in orders:
+    r.prepare_order() '''  # Polymorphic call
+
+'''from abc import ABC, abstractmethod
+
+class Employee(ABC):
+    def __init__(self, name, base):
+        self.name = name
+        self.base = base
+
+    @abstractmethod
+    def salary(self):
+        pass
+
+    def display(self):
+        print(f"{self.name}: ₹{self.salary()}")
+
+class FullTime(Employee):
+    def salary(self):
+        return self.base + 5000   # HRA bonus
+
+class PartTime(Employee):
+    def salary(self):
+        return self.base * 0.5    # Half pay
+
+class Contractor(Employee):
+    def salary(self):
+        return self.base + 2000   # Project bonus
+
+employees = [FullTime("Alice", 40000),
+             PartTime("Bob", 30000),
+             Contractor("Carol", 35000)]
+
+for e in employees:
+    e.display()'''
+
+from abc import ABC, abstractmethod
+
+class Exam(ABC):
+    def __init__(self, subject):
+        self.subject = subject
+
+    @abstractmethod
+    def question_format(self):
+        pass
+
+    @abstractmethod
+    def evaluate(self):
+        pass
+
+class MCQExam(Exam):
+    def question_format(self):
+        return "Multiple Choice Questions"
+    def evaluate(self):
+        return "Auto-graded by system"
+
+class DescriptiveExam(Exam):
+    def question_format(self):
+        return "Long Answer Questions"
+    def evaluate(self):
+        return "Manually graded by teacher"
+
+class CodingExam(Exam):
+    def question_format(self):
+        return "Programming Problems"
+    def evaluate(self):
+        return "Evaluated by test cases"
+
+exams = [MCQExam("Math"), DescriptiveExam("History"), CodingExam("Python")]
+for exam in exams:
+    print(f"{exam.subject} | Format: {exam.question_format()} | Eval: {exam.evaluate()}")
