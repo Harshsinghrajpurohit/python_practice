@@ -292,7 +292,7 @@ employees = [FullTime("Alice", 40000),
 for e in employees:
     e.display()'''
 
-from abc import ABC, abstractmethod
+'''from abc import ABC, abstractmethod
 
 class Exam(ABC):
     def __init__(self, subject):
@@ -326,4 +326,91 @@ class CodingExam(Exam):
 
 exams = [MCQExam("Math"), DescriptiveExam("History"), CodingExam("Python")]
 for exam in exams:
-    print(f"{exam.subject} | Format: {exam.question_format()} | Eval: {exam.evaluate()}")
+    print(f"{exam.subject} | Format: {exam.question_format()} | Eval: {exam.evaluate()}")'''
+
+
+# 
+''''def is_prime(n):
+    if n<=1:
+        print("the number is not a prime")
+    for i in range(2,n):
+        if n%i==0:
+            print("the number is not a prime ")
+           
+        else:
+            print("the number is prime:")
+            break
+num=int(input("enter the number:"))
+is_prime(num)'''
+
+'''def factorial(n):
+    if n<=1:
+        return 1
+    else:
+        return n*factorial(n-1)
+num=int(input("enter the number:"))
+print("the factorial of {} is {} ".format(num,factorial(num)))'''
+
+'''l=lambda a:a**2
+print("sq ={}".format(l(4)))'''
+
+'''lst=[23,45,65,44,223,446,7788,99,778,990,554,59]
+print("original list=",lst)
+l1=list(filter(lambda n:n%2==1,lst))
+print(l1)'''
+
+'''from random import*
+from math import*
+for i in range(1,1000):
+  print(floor(random()*10))'''
+
+''''import random
+num=random.randint(1,100)
+print(num)'''
+
+'''import random
+a=int(input("enter the lower limit:"))
+b=int(input("enter the higher limit:"))
+num=random.randint(a,b)
+print(num)'''
+
+'''import random
+dice=random.choice(['Heads','Tails'])
+print(dice)'''
+
+'''import random
+import string
+def password(length):
+    ch=string.ascii_letters+string.digits
+    result=''.join(random.choice(ch) for i in range(length))
+    return result
+length=int(input("enter the length of password:"))
+print(password(length))'''
+
+'''import random
+import string
+def otp(length):
+    ch=string.digits
+    result=''.join(random.choice(ch) for i in range(length))
+    return result
+length=int(input("enter the length:"))
+print(otp(length))'''
+
+
+'''import random
+print(random.randint(1,100))''' 
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(chr(j+64),end='')
+    print()
+
+for i in range(1,6):
+    for j in range(1,4-i+1):
+        print(chr(j+64),end='')
+    print()
+ 
+
+
+
+

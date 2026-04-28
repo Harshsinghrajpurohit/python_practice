@@ -30,6 +30,7 @@ print("{}! is {}".format(num,factorial(num)))'''
 
 #64.  write a python program tom define a function that finds the maximum of 3 number:
 '''def max(a,b,c):
+    
     if a>b and a>c:
         return a    
     elif b>a and b>c:
