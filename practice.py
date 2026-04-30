@@ -400,7 +400,7 @@ print(otp(length))'''
 '''import random
 print(random.randint(1,100))''' 
 
-for i in range(1,5):
+'''for i in range(1,5):
     for j in range(1,i+1):
         print(chr(j+64),end='')
     print()
@@ -408,9 +408,63 @@ for i in range(1,5):
 for i in range(1,6):
     for j in range(1,4-i+1):
         print(chr(j+64),end='')
-    print()
+    print()'''
+
+'''class Student:
+    """I am creating a student class"""
+print(Student.__doc__)'''
+
+'''class Student:
+    school="Gqt"
+    def __init__(self,name):
+        self.name=name
+s = Student("Harsh")
+print(s.school)
+print(s.name)'''
  
+'''class Student:
+    school = "GQT"        # class variable (shared by all)
+    
+    def __init__(self, name):
+        self.name = name  # instance variable (unique to each object)
 
+s1 = Student("Alice")
+s2 = Student("Bob")
 
+print(s1.school)  # GQT  (same for all)
+print(s1.name)    # Alice (unique)
+print(s2.name)'''    # Bob   (unique)
 
+'''class Product:
+    def __init__(self,id,name,price):
+        self.id=id
+        self.name=name
+        self.price=price
+p=Product(10,"RAM",5000)
 
+print('{}\t{}\t{}\t'.format(p.id,p.name,p.price))'''
+
+'''class Student:
+    count=0
+    total_gpa=0
+    def __init__(self,name,gpa):
+        self.name=name
+        self.gpa=gpa
+        Student.count+=1
+        Student.total_gpa+=gpa
+    @classmethod
+    def get_count(cls):
+        return f"total students={cls.count}"
+    @classmethod
+    def get_gpa(cls):
+        if cls.count==0:
+            return 0
+        else:
+            return f"average_gpa={cls.total_gpa/cls.count:.2f}"
+    
+s1=Student("harry",4.1)
+s2=Student("hemu",3.4)
+s3=Student("haru",2.1)
+s4=Student("harsh",3.1)
+print(Student.get_count())
+print(Student.get_gpa())'''
