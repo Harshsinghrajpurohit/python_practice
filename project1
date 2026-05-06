@@ -1,0 +1,101 @@
+'''import time
+class Validation:
+    accountNumber=545750
+    password=1817
+    def validate(serlf,a,b):
+        print("\n pls wait...\n")
+        time.sleep(3)
+        if Validation.accountNumber!=a: 
+            print("Account Number  is incorrect... try again")
+        elif Validation.password!=b:
+            print("Password  is incorrect... try again")
+        else:
+            print("Validation Sucessfull!!!")
+            return
+class AccountOperations:
+    v=Validation()
+    balance=0
+    Statement=[]
+    def deposit(self,dAmount):
+        self.Statement.append('Deposit={}'.format(dAmount))
+        print('\n Pls wait..\n')
+        time.sleep(3)
+        self.balance+=dAmount
+        print("Amount deposited Successfully!!!")
+        print("Balance={}".format(self.balance))
+
+    def withdraw(self,wAmount):
+        print('\n Pls wait..\n')
+        time.sleep(3)
+        if wAmount<=self.balance:
+            print("Collect your Amount!!")
+            self.balance-=wAmount
+            print('Balance={}'.format(self.balance))
+            self.Statement.append('Withdraw={}'.format(wAmount))
+        else:
+            print("Insufficiant balance.....withdraw not possible")
+    def changePin(self,oldpin,newpin):
+        print("\nChanging Pin ... Pls wait\n")
+        time.sleep(3)
+        if oldpin==v.password:
+            v.password=newpin
+            print("Pin changed Sucessfully")
+        else:
+            print('Invalid Password try again...')
+        
+    def miniStatement(self):
+        print("\n Generating Mini Statement.... pls Wait\n")
+        time.sleep(3)
+        for i in self.Statement:
+            print(i)
+        print("AccountBalance={}".format(self.balance))
+
+    def exitApp(self):
+        print("\n Exiting....pls Wait...\n")
+        time.sleep(3)
+        print("\n Thank You, Visit Again!!!")
+        exit()
+
+#logging into Banking App
+print("Welcome to HDFC Bank!")
+a=int(input("Enter the Acoount Number:"))
+b=int(input("Enter the ATM-Pin:"))
+v=Validation()
+v.validate(a,b)
+
+a= AccountOperations()
+
+while(True):
+    print('\n Choose from the following options:')
+    print('-------------------------------------')
+    print('1.Deposit\n2.Withdraw\n3.ChangePin\n4.Mini Statement\n5.Exit')
+    choice=int(input("Enter your choice:"))
+    if choice==1:
+        dAmount=int(input("Enter the amount to be deposited:"))
+        if dAmount%100==0 and dAmount>0:
+            a.deposit(dAmount)
+        else:
+            print("Pls Enter the valid amount in multiples of hundreds...!")
+    elif choice==2:
+        print('Balance={}'.format(a.balance))
+        wAmount=int(input("Enter the amount to be withdrawn:"))
+        if wAmount%100==0 and wAmount>0:
+            a.withdraw(wAmount)
+        else:
+            print("Pls Enter the valid amount in multiples of hundreds...!")
+    elif choice==3:
+        oldPin=int(input("Enter old pin:"))
+        newPin=int(input("Enter new pin:"))  
+        cPin=int(input("Confirm pin:")) 
+        if newPin==cPin:
+            a.changePin(oldPin,newPin)
+        else:
+            print("New pin and confirm pin are not matching")
+    elif choice==4:
+        a.miniStatement()
+
+
+    elif choice==5:
+        a.exitApp()
+    else:
+        print("Invalid Choice!! Try Again!!")'''
