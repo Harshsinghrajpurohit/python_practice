@@ -468,3 +468,31 @@ s3=Student("haru",2.1)
 s4=Student("harsh",3.1)
 print(Student.get_count())
 print(Student.get_gpa())'''
+
+
+
+
+
+'''arr = list(map(int, input("enter the elements of the array:").split()))
+max_val = arr[0]
+min_val = arr[0]
+for i in arr:
+    if i > max_val:
+        max_val = i
+    if i < min_val:
+        min_val = i
+print("Max =", max_val)
+print("Min =", min_val)'''
+
+'''def is_prime(n):
+    if n<2:
+        print("the number is not a prime")
+    for i in range(2,n):
+        if n%i==0:
+            print("the number is not a prime")
+            break
+
+    else:
+        print("the number is prime")
+
+print(is_prime(31))'''

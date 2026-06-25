@@ -35,7 +35,6 @@ if temp==rev:
         print("the number is palindrome")
 else:
         print("the number is not palindrome")'''
-
 #34. write a python program to gcd of two numbers.
 '''a=int(input("enter the first number:"))
 b=int(input("enter the second number:"))
@@ -118,10 +117,13 @@ min_element = min(t)
 print("the minimum element in the tuple is:", min_element)'''
 
 #83. write a python program to convert a list tuple.
-'''l=(int(x) for x in input("enter the number of elements in the list:").split())
-   print("the list is:",l) 
-my_tuple=tuple(l)
-print("the tuple is:",my_tuple)'''
+'''l = [int(x) for x in input("Enter elements of the list: ").split()]
+
+print("The list is:", l)
+
+my_tuple = tuple(l)
+
+print("The tuple is:", my_tuple)'''
 
 #84. write a python program to convert a tuple to a list.
 '''t=tuple(int(x) for x in input("enter the number of elements:").split())
@@ -154,7 +156,7 @@ print("the difference of s2 and s1 is:",diff2)'''
 s2=set(int(x) for x in input("enter the elements of the second set:").split())
 if s1.issubset(s2):
     print("s1 is a subset of s2")   
-else:   
+else: 
       print("s1 is not a subset of s2")'''
 
 #89. write a python program to remove duplicates from a list  using sets.
@@ -204,7 +206,8 @@ print("Updated dictionary:", d)'''
 key=int(input("enter the key to delete:"))
 if key in d:
     del d[key]
-    print("the updated dictionary is:",d)'''
+    print("the updated dictionary is:",d)
+'''
 
 #95.Write Pyrhon program to merge two dictionaries.
 '''d1={'Name':'Virat','Age':36,'sport':'Cricket','Country':'India'}
@@ -253,15 +256,15 @@ print("the key with the maximum value in the dictionary is:",max_key)'''
 
 '''d={'a':100,'b':450,'c':200,'d':50,'e':300,'f':350,'g':40}
 sorted_d=dict(sorted(d.items(),key=lambda item:item[1]))
-print("the dictionary sorted by values is:",sorted_d)'''
-
+print("the dictionary sorted by values is:",sorted_d)
+'''
 #100. write a pyrhon program to check if a key exists in a dictionary.
-'''d={'Name' :'Virat','Age':36,'sport':'Cricket','Country':'India'}
+d={'Name' :'Virat','Age':36,'sport':'Cricket','Country':'India'}
 key=input("enter the key to check:")
 if key in d:
     print("the key exists in the dictionary")
 else:
-    print("the key does not exist in the dictionary")'''
+    print("the key does not exist in the dictionary")
 
 
 '''def largest(a,b,c):

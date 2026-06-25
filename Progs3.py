@@ -56,8 +56,8 @@ print("the reverse of the string is:",reverse_string(string))'''
             count+=1
     return count
 s=input("Enter the string:")
-print("the number of vowels in the string is:",count_vowels(s))'''
-
+print("the number of vowels in the string is:",count_vowels(s))
+'''
 
 #67. write a  python program to define a function that check if a string is palindrome
 '''def palindrome(s):
@@ -66,8 +66,8 @@ print("the number of vowels in the string is:",count_vowels(s))'''
     else:
         print("the string is not a palindrome")
 s=input("enter the string:")
-palindrome(s)''' 
-
+palindrome(s)
+'''
 #68. Write a python progrma to define a function that return sthe sum of the digits of the number
 '''def sum(n):
   total=0
@@ -79,8 +79,8 @@ palindrome(s)'''
   
 n=int(input("Enter the number:"))
 sum(n)
-print("sum of digits is:",sum(n))'''
-
+print("sum of digits is:",sum(n))
+'''
 #69. write a pyrhon program to define a function that genrates fibonacci series upto 'n'
 
 '''def fibonacci(n):
@@ -89,8 +89,8 @@ print("sum of digits is:",sum(n))'''
         fib.append(fib[i-1]+fib[i-2])
     return fib
 n=int(input("enter the number of terms:"))
-print("the fibonacci seires is:",fibonacci(n))'''
-
+print("the fibonacci seires is:",fibonacci(n))
+'''
 #70 write a python program to define a function that calculates the power of a number.
 
 '''def calculate(a,b):
@@ -102,8 +102,8 @@ a=int(input("enter the base:"))
 b=int(input("enter the power:"))
  
  
-print("the power of a is:",calculate(a,b))'''
-
+print("the power of a is:",calculate(a,b))
+'''
 
 #51 write a python to print multiplication table of a number
 '''n=int(input("Enter the number:"))
@@ -114,7 +114,7 @@ for i in range(1,11):
 #52 write a python program to print all even numbers from 1 to 100.
 '''for i in range(1,101):
     if i%2==0:
-        print(i, end =' ,')'''
+print(i, end =' ,')'''
 
 #53.write a python program to print all odd numbers from 1 to 100:
 '''for i in range(1,101):
@@ -129,7 +129,7 @@ for i in range(1,n+1):
 print("the sum of  natural numbers is {}".format(sum))'''
 
 # 55 write a program to print pyramid patterns of stars
-'''n=int(input("Enter the number of rows"))
+'''n=int(input("Enter the number of rows:"))
 for i in range(1,n+1):
     for j in range(n-i):
         print(" ",end='')
@@ -144,7 +144,7 @@ for i in range(1,n+1):
         print(" ",end='')
     for j in range(2*(n-i)+1):
         print('*',end='')
-    print()'''    
+    print()   '''
 
 #57 write a python program to print Pascal's triangle.
 '''n=int(input("enter the number of rows:"))
@@ -157,7 +157,7 @@ for i in range(n):
         print(value,end='')
         value= value * (i-j)//(j+1)
         
-    print()'''        
+    print()     '''
 #58. write a python program to print Floyd's triangle.
 '''n=int(input("Enter the number of rows:"))
 num=1
@@ -165,7 +165,7 @@ for i in range(1,n+1):
     for j in range(i):
         print(num,end='')
         num+=1
-    print()''' 
+    print()'''
 #59. write a pytjhon program to print prime numbers between 1 and 100.
 '''for num in range(2, 101):
     is_prime = True
@@ -200,8 +200,8 @@ if not s:
     print("String is empty")
 else:
     print("String is  not empty")
-    print(len(s))'''
-
+    print(len(s))
+'''
 #163 Write a program to check if a tuplpe is empty.
 '''t = tuple(input("Enter elements: ").split())
 
@@ -210,10 +210,9 @@ if not t:
 else:
     print("Tuple is not empty")
     print(len(t))'''
-
 #164 Write a python program to check if a dictionary is empty.
 
-''''d={}
+'''d={}
 n=int(input("enter the elements:"))
 for i in range(n):
     key=input("enter key:")
@@ -311,7 +310,7 @@ print(d)
 rev = dict(reversed(list(d.items())))
 print(rev)'''
 
-#174 Write a python program to reverse a dictionary.
+#174 Write a python program to reverse a set.
 '''s = set(map(int, input("Enter elements: ").split()))
 print(s)
 
@@ -327,8 +326,8 @@ print(rev)'''
 words=s.split()
 rev=words[::-1]
 result=" ".join(rev)
-print(result)'''
-
+print(result)
+'''
 #176 Write a python program to characters in each word of sentence.
 '''s=input("Enter the sentence:")
 print(s)
@@ -345,7 +344,7 @@ while n>0:
     n=n//10
 print("reversed number is:",rev)'''
 
-#write a python program to reverse order of lines in file.
+#178 write a python program to reverse order of lines in file.
 '''f=open("file1.txt","r")
 lines=f.readlines()
 rev=lines[::-1]
@@ -363,7 +362,7 @@ l = [sub[::-1] for sub in l[::-1]]
 print("Reversed:", l)'''
 
 #180. Write a python to reverse the elements in of a nested dictionary.
-'''d = {
+d = {
     'a': {'x': 1, 'y': 2},
     'b': {'z': 3}
 }
@@ -374,5 +373,5 @@ for outer_k, inner_d in d.items():
     for inner_k, value in inner_d.items():
         rev[value] = outer_k
 
-print(rev)'''
+print(rev)
 

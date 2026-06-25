@@ -92,8 +92,8 @@ s=input("Enter the stirng:")
 if vowels_conso(s):
     print("the stirng contains both both vowels and consonants.")
 else:
-    print("tthe stirng doesn't contains both both vowels and consonants.  ")'''
-
+    print("the stirng doesn't contains both both vowels and consonants.  ")
+'''
 #198 Write a python program to check if a string contains repeated characters.
 '''s = input("Enter string: ")
 
@@ -136,7 +136,6 @@ for v in vowels:
     else:
         print("the does not contains all vowels")
         break'''
-
 
 #311 Write a python program to implement object-oriented programming with a class and object.
 
@@ -263,13 +262,13 @@ d.sound()
 c.sound()'''
 
 #318 Write a python program to implement method overloading.
-'''class Test:
+''''class Test:
     def add(self, a, b, c ):
         return a + b + c
 
 t = Test()
 print(t.add(2, 3,5))       
-print(t.add(2, 3, 4))'''
+print(t.add(2, 3, 4))'''''
 
 # 319 Write a python program to implement method overriding.
 '''class Employee:
@@ -425,7 +424,7 @@ s.marks()'''
 
 
 #329 Write a python program to implement interface using abstract  class.
-'''from abc import *
+''''from abc import *
 class Vehicle(ABC):
 
     @abstractmethod
@@ -459,10 +458,10 @@ c.start()
 c.stop()
 
 b.start()
-b.stop()'''
+b.stop()'''''
 
 #330 Write a python program to implement multiple constructors using @classmethod.
-'''class BankAccount:
+class BankAccount:
     def __init__(self, name, balance):
         self.name = name
         self.balance = balance
@@ -483,6 +482,6 @@ a1 = BankAccount("Harsh", 5000)
 a2 = BankAccount.from_name("Aman")
 
 a1.display()
-a2.display()'''
+a2.display()
 
 

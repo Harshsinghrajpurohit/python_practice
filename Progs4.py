@@ -13,7 +13,7 @@ else:
     print("Character is not a special symbol")'''
 
 #133 Write a python program to count uppercase letters in a string.
-'''s=input("enter the string:")
+''''s=input("enter the string:")
 count=0
 for i in s:
     if'A'<=i<='Z':
@@ -68,10 +68,10 @@ print("Strings after replacing spaces with hyphens:",result)'''
 words=s.split()
 print("Words in string",words)'''
 
-#140 Write a python program to join words into a senrence.
+#140 Write a python program to join words into a sentence.
 '''words=input("Enter the words seperated by spaces:")
 sentence=' '.join(words.split())
-print("Sentences after joining words",sentence)'''
+print("Sentences after joining words:",sentence)'''
 
 #151 Write a python program to simulate tossing a coin.
 '''import random
@@ -158,7 +158,7 @@ print("Random floating point number:", random_float())'''
 
 #160 Write a python progrma to generate random numbers within a specific range.
 '''import random
-print("Random number between 1 and 100:", random.randint(1, 101))'''
+print("Random number between 1 and 100:", random.randint(1, 100))'''
 
 
 
@@ -256,7 +256,7 @@ if is_digit(s):
 else:
     print("The string does not contain only digits")'''
 
-#189 Write  a python program to check idf a string contains only alphabets using function.
+#189 Write  a python program to check if a string contains only alphabets using function.
 '''def is_alpha(s):
     return s.isalpha()
 s=input("Enter the string:")
@@ -314,15 +314,15 @@ print("The temperature in fahrenhit is:",f)'''
     return(f-32)*5/9
 f=float(input("Enter the temperature in Fahrenhit:"))
 c=fah_to_cel(f)
-print("The temperature in Celcius is:",c)'''
-
+print("The temperature in Celcius is:",c)
+'''
 #116 Write a python progrma to calculater the area of a circle.
 '''import math
 def area_of_circle(r):
     return math.pi*r**2
 r=float(input("Enter the radius of the circle:"))
 area=area_of_circle(r)
-print("The area of thr circle is:",area)'''
+print("The area of the circle is:",area)'''
 
 #117 Write a python program to calculate the area of a rectangle.
 '''def area_of_rectangle(l,w):
@@ -330,7 +330,7 @@ print("The area of thr circle is:",area)'''
 l=float(input("Enter the length of the rectangle:"))
 w=float(input("Enter the width of the rectangle:"))
 area=area_of_rectangle(l,w)
-print("The area of thr rectangle is:",area)'''
+print("The area of the rectangle is:",area)'''
 
 #118 Write a python program to calculate the area of a triangle.
 '''def area_of_triangle(b,h):
@@ -338,21 +338,21 @@ print("The area of thr rectangle is:",area)'''
 b=float(input("Enter the base of the triangle:"))
 h=float(input("Enter the height of the triangle:"))
 area=area_of_triangle(b,h)
-print("The area of thr triangle is:",area)'''
+print("The area of the triangle is:",area)'''
 
 #119 Write a python program to calculate perimeter of a square.
 '''def perimeter_of_square(s):
     return(4*s)
 a=float(input("Enter the side of the square:"))
 perimeter=perimeter_of_square(a)
-print("The perimeter of the square is:",perimeter)'''
-
+print("The perimeter of the square is:",perimeter)
+'''
 #120 Write a python program to calculate perimeter of a rectangle.
-'''def perimeter_of_rec(l,w):
+def perimeter_of_rec(l,w):
     return 2*(l+w)
 l=float(input("Enter the length of the rectangle:"))
 w=float(input("Enter the width of the rectangle:"))
 perimeter=perimeter_of_rec(l,w)
-print("The perimeter of the square is:",perimeter)'''
+print("The perimeter of the square is:",perimeter)
 
 

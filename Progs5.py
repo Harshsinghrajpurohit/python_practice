@@ -23,10 +23,10 @@ print("The volume of cylinder is:",cylinder_volume(radius,height))'''
 
 #124 Write a python program to calculate volume of sphere.
 '''import math
-def sphere_voume(radius):
+def sphere_volume(radius):
     return (4/3)*math.pi*radius**3
 radius=float(input("Enter the radius of the sphere:"))
-print("The volume of the sphere is:",sphere_voume(radius))'''
+print("The volume of the sphere is:",sphere_volume(radius))'''
 
 #125  Write a python program to calculate surface area of a cube.
 '''def cube_surface(a):
@@ -66,8 +66,8 @@ is_upper(char)'''
     else:
         print("The character is not a lowercase")
 char=input("Enter a character:")
-is_lower(char)'''
-
+is_lower(char)
+'''
 #130 Write a python program to check if a character is a digit.
 '''def is_digit(char):
     if char.isdigit():
@@ -196,7 +196,8 @@ f.close()'''
 content=file.read()
 words=len(content.split())
 print("The number of words in the file is:",words)
-file.close()'''
+file.close()
+'''
 
 #44 Write a python program to count lines in a file.
 '''file=open("file1.txt","r")
@@ -273,7 +274,8 @@ for i in num:
 i=0
 while i<len(num):
     print(num[i],end=" ")
-    i+=1'''
+    i+=1
+'''
 
 #103 Write a python program to find the sum of elements in a tuple.
 '''t = tuple(int(x) for x in input("Enter elements: ").split())
@@ -322,7 +324,7 @@ words=s.split()
 longest_word=max(words,key=len)
 print(longest_word)'''
 
-#108  Write a Python program to find the largest word in a sentence.
+#108  Write a Python program to find the smallest word in a sentence.
 '''s=input("Enter the string:")
 words=s.split()
 smallest_word=min(words,key=len)
@@ -338,13 +340,13 @@ print("Number of words:", count)'''
 
 
 #110 Write a python program to check if a number is positive,negative or zero.
-'''n=int(input("Enter the number:"))
+n=int(input("Enter the number:"))
 if n==0:
  print("The number is zero")
 elif n>0:
     print("The number is positive")
 else:
-    print("The number is negative")'''
+    print("The number is negative")
 
 
 

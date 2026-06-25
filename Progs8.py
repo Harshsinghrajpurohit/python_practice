@@ -26,8 +26,8 @@ for i in range(1,n+1):
 for i in range(1,n+1):
     for j in range(1,n+1):
         print('*',end='')
-    print()'''
-
+    print()
+'''
 #5 Write a python program to create a Pyramid Pattern pattern.
 '''n=int(input("Enter the number of rows:"))
 for i in range(1,n+1):
@@ -35,8 +35,8 @@ for i in range(1,n+1):
         print(' ',end='')
     for j in range(2*i-1):
         print('*',end='')
-    print()'''
-
+    print()
+'''
 #6 Write a python program to create a Diamond Pattern pattern.
 '''for i in range(1,5):
     for k in range(5-i+1):
@@ -341,7 +341,7 @@ for i in range(1, n + 1):
             print(' ', end=' ')
     print()'''
 
-n = int(input("Enter number of rows: "))
+''''n = int(input("Enter number of rows: "))
 
 num = 1
 
@@ -349,4 +349,16 @@ for i in range(1, n + 1):
     for j in range(i):
         print(num, end=" ")
         num += 1
-    print()
+    print()'''
+
+'''s = input("Enter a string: ")
+result = ""
+for ch in s:
+    if ch not in result:
+        result += ch
+print(result)'''
+
+s1=input("Enter first string: ")
+s2=input("Enter second string: ")
+if sorted(s1) == sorted(s2):
+    print("The strings are anagrams.")  

@@ -3,9 +3,8 @@
 
 
 #2. write a python program to take user input and display it.
-
 '''age= int(input ("enter your age:"))
-#print("you are ", age," years old")'''
+print("you are ", age," years old")'''
 
 
 #3. write a python program to swap two numbers.
@@ -47,7 +46,7 @@ elif num == 0:
 else:
     for i in range(1, num + 1):
         factorial = factorial * i
-''    print("the factorial of", num, "is", factorial)'''
+    print("the factorial of", num, "is", factorial)'''
 
 
 #7. Write a python program to generate Fibonacci series.
@@ -73,8 +72,8 @@ if num<=1:                                            #if the number is less tha
     print("the number is  not prime")
 else:
     for i in range(2,num):                           #check if the number is divisible by any number from 2 to num-1
-        if num%i==0:                                 #if the number is divisible by any number, it is not prime         
-            print("the number is not prime")
+     if num%i==0:                                 #if the number is divisible by any number, it is not prime         
+        print("the number is not prime")
             
     else:        
         print("the number is prime")'''
@@ -129,16 +128,16 @@ print("the length of the string is:",length)'''
 #15. write a program to remove all spaces from a string.
 '''s=input("enter the string:")
 s=s.replace(" ","")
-print("the string without spaces is:",s)'''
-
+print("the string without spaces is:",s)
+'''
 
 #16. write a  python program to count occurance of a substring
 '''string = input("Enter string: ")
 sub = input("Enter substring: ")
 
-print(string.count(sub))
+print(string.count(sub))'''
 
-or'''
+'''or'''
 
 '''s=input("enter the string:")
 sub=input("enter the substring:")
@@ -152,7 +151,7 @@ print("The number of occurrences of the substring is:", count)'''
 #17. write a python program to convert a string into uppercase.
 '''s=input("enter the string:")
 s=s.upper()
-print("the string in uppercase is:",s)'''
+print("the string in uppercase is:",s')'''
 
 #18. write a pyhton program to replace vowels with *.
 '''s=input("enter a string:")
@@ -166,7 +165,7 @@ print("the string with vowels replaced is:",s)'''
 #19.  write a python program to check if two strings are anagrams.
 
 '''s1=input("enter the first string:").lower()
-s2=input("Enter the second sstring:").lower()
+s2=input("Enter the second string:").lower()
 if sorted(s1)==sorted(s2):
  print("the strings are anagrams")
 else:
@@ -266,6 +265,7 @@ for num in list:
             second_max = num
 if second_max is not None:
     print("the second largest element is:",second_max)'''
+
   
 
 #28 write a python priogram to merge two lists.
@@ -290,5 +290,4 @@ k = int(input("Enter k: "))
 k = k % len(lst)
 
 rotated = lst[k:] + lst[:k]
-
 print("Left rotated list:", rotated)'''
